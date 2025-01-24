@@ -14,8 +14,8 @@
     * Open a private window in your browser. Copy and paste the link to your pull request into the address bar. Make sure you can see your pull request properly. This helps the technical facilitator and learning support staff review your submission easily.
 
 Checklist:
-- [ ] Create a branch called `assignment-one`.
-- [ ] Ensure that the repository is public.
+- [X] Create a branch called `assignment-one`.
+- [X] Ensure that the repository is public.
 - [ ] Review [the PR description guidelines](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md#guidelines-for-pull-request-descriptions) and adhere to them.
 - [ ] Verify that the link is accessible in a private browser window.
 
@@ -106,6 +106,8 @@ Please do not pick the exact same tables that I have already diagrammed. For exa
 	- <img src="./images/01_farmers_market_conceptual_model.png" width="600">
 - The column names can be found in a few spots (DB Schema window in the bottom right, the Database Structure tab in the main window by expanding each table entry, at the top of the Browse Data tab in the main window)
 
+## Aidan's Diagram
+<img src="./images/sql_assignment1_section1.png" width="500">
 ***
 
 ## Section 2:
@@ -201,9 +203,15 @@ Link if you encounter a paywall: https://web.archive.org/web/20240422105834/http
 
 **What values systems are embedded in databases and data systems you encounter in your day-to-day life?**
 
-Consider, for example, concepts of fariness, inequality, social structures, marginalization, intersection of technology and society, etc.
+Consider, for example, concepts of fairness, inequality, social structures, marginalization, intersection of technology and society, etc.
 
 
 ```
 Your thoughts...
+Extremely disorganized flow of thought below:
+The immediate thought that pops into my head is social media – specifically the algorithms they use to push certain content over others. While weighted algorithms that value time spent on screen or clicks are a little outside the focus here, the choice to record this data for the purposes of pushing content and the limitations in operationalizing what content “ought to be” valued or seen is more so. There is plenty of evidence pointing to sensational (usually negative) content being more valued in this sort of system. Thus, extreme opinions seem omni-present when, in fact, they likely are a minority. Yet, continuous exposure to sensational content can push people towards extremes. Somewhat relatedly, scholarly or academic systems tend to push content based on attention, regardless of the quality of research. This can be problematic for a number of reasons. Certain perspectives can dominate the results of a search, as a result of being popular at some given point or due to being the “correct” perspective for the field. Here, I’m mostly thinking of Westernized research dominating most search results because greater weight might be placed on Western journals or authors due to the specific attention they receive, the perceived value and quality of their work (regardless of “real” value/quality). 
+Relatedly, many databases I search often have very limited capabilities in terms of specifying generally good research practices (e.g., preregistration, diverse samples or large sample sizes, available code and data). In my own discipline of Psychology, this is problematic as we, like many other disciplines, are still recovering from a replication crisis. Yet, when I search why self-control is difficult, poorly replicated research comes up near the top despite it being rejected some 10 years ago. Obviously, a debate about the mechanisms of self-control has little far-reaching social consequences, but these limitations give me pause as they’re likely the standard for sets of databases that are meant to be “the cream of the crop” for informing us “experts” on the current knowledgebase for any given topic. We’ve changed in our understanding and values when judging research, yet, our databases don’t reflect this. Checking APA’s Psycnet now, I can filter researcher using a host of different variables. There are no options to identify Western or non-Western samples. Nor are there options to identify any of the good research practices outlined before. The inability to identify these aspects reinforces bad research practices flourishing, genuinely good research getting suppressed, and a warped sense of consensus on many topics. This research, be it behavioral or health-based, is meant to inform public policy and the public.
+Beyond that nerdy rant, typical practices in Western countries and beyond have systems in place for credit tracking and health records. Lenders have access to a host of information much of which disadvantages marginalized communities. I believe in North America it is common practice for them to check things like frequency of moving addresses, but of course taking on debt and other usual circumstances impact one’s ability to find homes or get almost any loan – leading to a reliance on less-than-optimal loaning business or illegal loan sharks. Finally, a point of pride in Canada is the access to universal healthcare – yet our data systems make this not-so-universal. Many people facing homelessness struggle to receive care, largely in part because they are not easily identified as Canadian citizens or residents. While it’s possible for them to still receive care and even obtain identification, the extra steps and stigma creates severe barriers to receiving needed care. I feel uncomfortable giving my flimsy paper Manitoba health card at clinics in Toronto, thus leading to confusion and a 10-minute (+) process for them to adequately identify me and let me use the services I know I’m entitled to. Our identification system leads to a (admittedly extremely small) but demotivating barrier for someone that understands his rights and has many legally accepted identifiers. It’s easy to imagine that someone with limited access to identification and that is not registered in our database (yet is Canadian all the same) can struggle to receive likely more urgent and needed care. Even beyond healthcare, the basic right to vote in public elections or any other “fundamental” Canadian right requiring identification has different but structurally similar limitations to those outlined in NADRA’s ID system.
+
+
 ```
