@@ -44,9 +44,13 @@ Additionally, include a date table.
 There are several tools online you can use, I'd recommend [Draw.io](https://www.drawio.com/) or [LucidChart](https://www.lucidchart.com/pages/).
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
+## Aidan's Diagram
+<img src="./images/assignment_two_ERD.png" width="500">
 
 #### Prompt 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+## Aidan's Diagram
+<img src="./images/assignment_two_ERD_prompt2.png" width="500">
 
 #### Prompt 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
@@ -55,6 +59,13 @@ The store wants to keep customer addresses. Propose two architectures for the CU
 
 ```
 Your answer...
+From my googling and asking those around me more wise in SQL than I: Type 1 is overwriting older data/values such that 
+it is replaced by the new values/data and there is no record of past data. Type 2 adds the newer data while still retaining
+ a historical record of past data. In this context, a type 1 architecture would involve having the customer_address table 
+ having columns like city, postal_code, street_address, and customer_id, and simply overwriting the value when customers move. 
+ A type 2 architecture might be having additional columns like is_current_address and a column containing the move date/date 
+ the address was first/last occuppied by the customer.
+
 ```
 
 ***
@@ -182,5 +193,14 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+Your (too many) thoughts...
+
+The post was an interesting read, albeit it felt a little like “old news” through no fault to the author, they were totally on it when they made the post and I might be a little more informed on the topic compared to others. It’s a general topic my PI and I discuss frequently as we specifically research effort/labour and have gotten into human-AI interaction within the effort context. The main theme that bubbled up to me was that AI, or the organizations behind them, often erase the massive contribution of human effort into developing “autonomous” systems with the aim of replacing or augmenting the very labour used to produce them. It also begs the questions of whether AI has any ability to “stand on its own” and “replace people.”
+In the contexts where it does “replace” people – human effort is exploited to eventually harm/come at a cost towards humans. This obviously sucks and is a big ethical concern of using humans to remove humans from the labour force. The companies seeking to actively exploit human effort for these systems likely will not give proper credit to the human effort required to develop them or “give back” proportionally to the work invested by people. It’s especially pointed when that labour comes at barely minimum wage – if that – through the use of M Turk workers.
+In a more general sense, the reliance on humans in training these systems also means AI is subject to many biases that humans are subject to along with its own unique biases, all while appearing neutral or objective/logical. This can perpetuate awful prejudices and give artificial truth to completely incorrect stereotypes/generalizations. All of this is terrifying, especially if AI takes on more important/authoritative positions within society. It’s worth noting that people tend to generally distrust AI for subjective judgments, but this might change with demographics (e.g., cultural or generational; https://doi.org/10.1016/j.techfore.2021.121390). Young people tend to be more trusting of AI, additionally China, and to an extent Japan, has shown to be much more trusting of AI companions than any other region. A lot of this probably comes from familiarity – though certain cultural teachings (e.g., Shinto beliefs allowing for non-humans/inanimate objects to contain spirits vs. a more restrictive Protestant belief) are believed to predispose people towards accepting/rejecting AI (e.g., https://doi.org/10.31234/osf.io/wc895). Additionally, people tend to trust AI for judgments perceived as less “subjective” (e.g., predicting the weather, or providing facts/information). The AI aversion, prior algorithm aversion, literature is super cool to explore!
+As a brief personal ramble: The last point is partly why AI is causing so many issues for human learning, where many believe products like GPT have authority on any given topic. From personal experience with my research, GPT has been very strongly opinionated (to a point of shutting down the conversation when I suggested personality traits are stable across life – the accepted position among personality researchers right now). Or when I’d try to test out its ability at summarizing article PDFs, it would completely misinterpret the conclusions, making up/completely extrapolating points made in the papers. I recently saw a BSky post from a law school graduate “friend-of-a-friend” pleading with people to never use GPT for legal advice as it would “lie” about 30-40% of the time in their own testing. This is part of the reason I avoid Twitter (X) where possible. The amount of AI-slop (as my friends and I colloquially refer to it) that is shoveled onto our feeds under the guise of being an “informative” source/account was almost as infuriating as the plethora of other problems the platform faces. Outside of bot-accounts, I cannot count how many times I have seen people on platforms post pictures of ChatGPT responses as definitive answers to online arguments they were having as some sort of “mic-drop” moment.
+To continue more on-topic, the threat of AI replacing human labour is obviously concerning for a number of reasons – namely unemployment, dropping wages, and the fact that people genuinely value working or being generative towards society. Though, we recently ran some studies demonstrating that people are equally (if not more) happy when they get to do generative/effortful leisure instead of work (sorry Protestant work ethic).
+Given that it seems inevitable that we must confront AI and “autonomous systems” being common-place in the work environment, I’m generally torn about using AI tools to replace human work – but ultimately land along the lines of using AI to reinforce human work. Mental healthcare comes to mind as a domain with limited funding, and not nearly enough human workers to meet growing demands. Some cool work from a UofT lab started testing the efficacy of LLM-based mental health “buddies” to help students with relatively lower mental health needs (https://osf.io/preprints/psyarxiv/xj7cz). The idea being, if AI is even “okay” at providing good service, we could take some of the pressure off human mental health workers so that those with more serious needs can be helped. Many LLM tools, though, can create unrealistic expectations or perceptions through being so agreeable. As one example a recent paper out of my lab demonstrated that AI responses are generally perceived as more empathetic than human responses (https://doi.org/10.1038/s44271-024-00182-6). People tend to find AI friendlier and more accepting of them – partially because it is. Empathy is hard work and people don’t like giving it out easily, while AI is readily available. Yet, this doesn’t mean that AI is empathetic nor does it mean that AI empathetic responses serve the same purposes as human empathy. 
+To play my own devil’s advocate, though, a study my PI and I ran and published recently demonstrated that people find their work to be less meaningful when aided by AI – despite putting out higher quality product (https://doi.org/10.1016/j.cognition.2025.106065). But maybe the issue here was that the work was no longer challenging or didn’t give enough agency to the worker – thus the task needs to adequately match the combined abilities of a human with AI.
+Personal interests and research referencing aside, the threat all of this has to human work and ownership of that work along with the real damage AI can do, pushing incorrect biases through as fact, is real and should prompt intense regulatory efforts. The pure amount of LLM/other AI tools out there for people to use for their own purposes makes me want to agree with those saying Pandora's box is open in terms of hoping to moderate/regulate what these tools can/will do and put out there. Maybe there is hope for us to stem the bleeding if efforts are made soon, but of course, a quick glance at the political/social landscape makes me lean towards cynicism – though I know there are many doing good work to try and push on these topics.
 ```
